@@ -29,6 +29,8 @@
   "author": "tofu-xx <tofu-xx@foxmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "postcss": "^8.4.41",
+    "postcss-csso": "^6.0.1",
     "vite": "^5.4.0"
   }
 }
