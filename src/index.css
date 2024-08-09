@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+}
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+ul,
+ol {
+  list-style: none;
+}
+button,
+input {
+  border: unset;
+  outline: unset;
+}
+i,
+em {
+  font-style: inherit;
+}
+b,
+strong {
+  font-weight: inherit;
+}
