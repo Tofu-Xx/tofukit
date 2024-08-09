@@ -7,7 +7,7 @@ export default defineConfig({
   css: {
     postcss: {
       plugins: [
-        csso(), // 压缩 CSS
+        // csso(), // 压缩 CSS
       ],
     },
   },
