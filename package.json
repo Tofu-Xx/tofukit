@@ -8,7 +8,8 @@
     "build": "vite build"
   },
   "files": [
-    "dist"
+    "dist",
+    "tools"
   ],
   "packageManager": "pnpm@9.4.0",
   "homepage": "https://github.com/tofu-xx/tofukit#readme",
