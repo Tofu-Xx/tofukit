@@ -1,6 +1,6 @@
 {
   "name": "tofukit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple toolbox of various web gadgets to boost your development happiness index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
