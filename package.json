@@ -9,7 +9,6 @@
     "patch": "npm version patch && npm publish"
   },
   "files": [
-    "dist",
     "tools"
   ],
   "packageManager": "pnpm@9.4.0",
