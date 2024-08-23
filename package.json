@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite --port 3000",
-    "build": "vite build",
+    "build": "tsup",
     "patch": "npm version patch && npm publish"
   },
   "files": [
@@ -29,10 +29,17 @@
   ],
   "author": "tofu-xx <tofu-xx@foxmail.com>",
   "license": "MIT",
-  "devDependencies": {
-    "vite": "^5.4.0"
-  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.7.14",
+    "@types/node": "^22.5.0",
+    "autoprefixer": "^10.4.20",
+    "jiti": "^1.21.6",
+    "postcss": "^8.4.41",
+    "postcss-preset-env": "^10.0.2",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4"
   }
 }

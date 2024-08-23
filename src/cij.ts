@@ -1,7 +1,7 @@
 export const cij = ({ raw }, ...args: any[]) => {
   const cssString = raw.reduce(
     (result: string, part: string, i: number) =>
-      result + (part.startsWith("\n") ? `;${part}` : part) + (args[i] ??= ""),
+      result + part + (args[i] ??= ""),
     "",
   );
   const style = document.createElement("style");
