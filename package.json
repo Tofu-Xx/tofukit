@@ -1,11 +1,12 @@
 {
   "name": "tofukit",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A simple toolbox of various web gadgets to boost your development happiness index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite --port 3000",
     "build": "tsup",
+    "release":"bumpp package.json --commit --tag --push --publish",
     "patch": "npm version patch && npm publish"
   },
   "files": [
@@ -36,6 +37,7 @@
     "@swc/core": "^1.7.14",
     "@types/node": "^22.5.0",
     "autoprefixer": "^10.4.20",
+    "bumpp": "^9.5.2",
     "jiti": "^1.21.6",
     "postcss": "^8.4.41",
     "postcss-preset-env": "^10.0.2",
