@@ -24,9 +24,6 @@ importers:
 
   packages/resetcss:
     devDependencies:
-      '@types/node':
-        specifier: ^22.5.1
-        version: 22.5.1
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.41)
