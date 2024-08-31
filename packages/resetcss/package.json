@@ -13,7 +13,10 @@
   "author": "tofu-xx",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^22.5.1",
+    "autoprefixer": "^10.4.20",
     "postcss": "^8.4.41",
+    "postcss-preset-env": "^10.0.2",
     "tsup": "^8.2.4"
   }
 }
