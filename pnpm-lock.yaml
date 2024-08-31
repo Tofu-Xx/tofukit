@@ -8,33 +8,15 @@ importers:
 
   .:
     devDependencies:
-      '@swc/core':
-        specifier: ^1.7.14
-        version: 1.7.14
       '@types/node':
-        specifier: ^22.5.0
-        version: 22.5.0
-      autoprefixer:
-        specifier: ^10.4.20
-        version: 10.4.20(postcss@8.4.41)
+        specifier: ^22.5.1
+        version: 22.5.1
       bumpp:
         specifier: ^9.5.2
         version: 9.5.2
-      jiti:
-        specifier: ^1.21.6
-        version: 1.21.6
-      postcss:
-        specifier: ^8.4.41
-        version: 8.4.41
       postcss-preset-env:
         specifier: ^10.0.2
         version: 10.0.2(postcss@8.4.41)
-      tsup:
-        specifier: ^8.2.4
-        version: 8.2.4(@swc/core@1.7.14)(jiti@1.21.6)(postcss@8.4.41)(typescript@5.5.4)
-      typescript:
-        specifier: ^5.5.4
-        version: 5.5.4
 
   packages/cij:
     devDependencies:
@@ -650,8 +632,8 @@ packages:
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
 
-  '@types/node@22.5.0':
-    resolution: {integrity: sha512-DkFrJOe+rfdHTqqMg0bSNlGlQ85hSoh2TPzZyhHsXnMtligRWpxUySiyw8FY14ITt24HVCiQPWxS3KO/QlGmWg==}
+  '@types/node@22.5.1':
+    resolution: {integrity: sha512-KkHsxej0j9IW1KKOOAA/XBA0z08UFSrRQHErzEfA3Vgq57eXIMYboIlHJuYIfd+lwCQjtKqUu3UnmKbtUc9yRw==}
 
   acorn@8.12.1:
     resolution: {integrity: sha512-tcpGyI9zbizT9JbV6oYE477V6mTlXvvi0T0G3SNIYE2apm/G5huBa1+K89VGeovbg+jycCrfhl3ADxErOuO6Jg==}
@@ -1953,16 +1935,19 @@ snapshots:
       '@swc/core-win32-arm64-msvc': 1.7.14
       '@swc/core-win32-ia32-msvc': 1.7.14
       '@swc/core-win32-x64-msvc': 1.7.14
+    optional: true
 
-  '@swc/counter@0.1.3': {}
+  '@swc/counter@0.1.3':
+    optional: true
 
   '@swc/types@0.1.12':
     dependencies:
       '@swc/counter': 0.1.3
+    optional: true
 
   '@types/estree@1.0.5': {}
 
-  '@types/node@22.5.0':
+  '@types/node@22.5.1':
     dependencies:
       undici-types: 6.19.8
 
@@ -2820,7 +2805,8 @@ snapshots:
 
   type-detect@4.1.0: {}
 
-  typescript@5.5.4: {}
+  typescript@5.5.4:
+    optional: true
 
   ufo@1.5.4: {}
 

@@ -9,7 +9,7 @@ export default defineConfig({
   outExtension: ({ format }) => ({
     js: `.${format}.js`,
   }),
-  // globalName: "tofukit",
+  globalName: "tofukit",
   target: "es5",
   minify: true,
 });

@@ -6,5 +6,5 @@ export const cij = ({ raw }, ...args: any[]) => {
   );
   const style = document.createElement("style");
   style.textContent = cssString;
-  document.body.appendChild(style);
+  document.querySelector("head")!.appendChild(style);
 };

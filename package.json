@@ -3,11 +3,7 @@
   "version": "0.0.4",
   "description": "A simple toolbox of various web gadgets to boost your development happiness index",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite --port 3000",
-    "build": "tsup",
-    "release":"bumpp package.json --commit --tag --push --publish",
-    "patch": "npm version patch && npm publish"
+    "release": "bumpp package.json --commit --tag --push --publish"
   },
   "files": [
     "tools"
@@ -34,14 +30,8 @@
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
-    "@swc/core": "^1.7.14",
-    "@types/node": "^22.5.0",
-    "autoprefixer": "^10.4.20",
+    "@types/node": "^22.5.1",
     "bumpp": "^9.5.2",
-    "jiti": "^1.21.6",
-    "postcss": "^8.4.41",
-    "postcss-preset-env": "^10.0.2",
-    "tsup": "^8.2.4",
-    "typescript": "^5.5.4"
+    "postcss-preset-env": "^10.0.2"
   }
 }
