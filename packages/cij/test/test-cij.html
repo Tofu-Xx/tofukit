@@ -1,0 +1,23 @@
+<head>
+  <script src="../../../tools/cij.iife.js"></script>
+</head>
+
+<body>
+  <button>Click me</button>
+</body>
+<script>
+  const { cij } = tofukit;
+  cij`
+    button {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      &:hover {
+        background-color: blue;
+      }
+    }
+  `
+</script>

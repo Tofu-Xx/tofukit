@@ -38,7 +38,7 @@ textarea {
     resize: none;
   }
 
-  &:not([type="range"]) {
+  &:not(input[type=range], input[type=image]) {
     padding: .2em .4em;
   }
 }

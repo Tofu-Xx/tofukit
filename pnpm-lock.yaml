@@ -36,6 +36,21 @@ importers:
         specifier: ^5.5.4
         version: 5.5.4
 
+  packages/cij:
+    devDependencies:
+      tsup:
+        specifier: ^8.2.4
+        version: 8.2.4(@swc/core@1.7.14)(jiti@1.21.6)(postcss@8.4.41)(typescript@5.5.4)
+
+  packages/resetcss:
+    devDependencies:
+      postcss:
+        specifier: ^8.4.41
+        version: 8.4.41
+      tsup:
+        specifier: ^8.2.4
+        version: 8.2.4(@swc/core@1.7.14)(jiti@1.21.6)(postcss@8.4.41)(typescript@5.5.4)
+
 packages:
 
   '@csstools/cascade-layer-name-parser@2.0.1':

@@ -1,0 +1,79 @@
+<main>
+  <span>span</span>
+
+
+  <form style="display: flex; flex-wrap: wrap; gap: 10px;" action="" method="post">
+    <!-- 各种表单控件 -->
+    <input type="button" value="Lorem">
+    <input type="checkbox" name="lorem">
+    <input type="color" name="">
+    <input type="date" name="">
+    <input type="datetime-local" name="">
+    <input type="email" name="">
+    <input type="file" name="">
+    <input type="image" name="" src="https://picsum.photos/200/200">
+    <input type="month" name="">
+    <input type="number" name="">
+    <input type="password" name="">
+    <input type="radio" name="">
+    <input type="range" name="">
+    <input type="reset" name="">
+    <input type="search" name="">
+    <input type="submit" name="">
+    <input type="tel" name="">
+    <input type="text" name="">
+    <input type="time" name="">
+    <input type="url" name="">
+    <input type="week" name="">
+    <textarea name="" cols="20" rows="1"></textarea>
+    <textarea name="" cols="30" rows="10"></textarea>
+    <select name="">
+      <option value="">Lorem ipsum dolor sit.</option>
+      <option value="">Lorem ipsum dolor sit.</option>
+      <option value="">Lorem ipsum dolor sit.</option>
+      <option value="">Lorem ipsum dolor sit.</option>
+    </select>
+    <button>??</button>
+    <button>??</button>
+    <button disabled="disabled">??</button>
+    <button type="reset">asd</button>
+    <button type="submit">asd</button>
+  </form>
+
+  <div>
+    <!-- 各种媒体控件
+    <img src="https://picsum.photos/200/200" alt="" srcset="">
+    <video src="http://api.yujn.cn/api/zzxjj.php" controls></video>
+    <audio src="http://api.yujn.cn/api/changya.php?type=mp3" controls></audio>
+    <iframe src="https://cn.vuejs.org" frameborder="0"></iframe> -->
+  </div>
+
+
+  <ul style="height: 60px;overflow: auto">
+    <li><a href="#li">Lorem ipsum dolor sit.</a></li>
+    <li><a href="#li">Lorem ipsum dolor sit.</a></li>
+    <li><a href="#li">Lorem ipsum dolor sit.</a></li>
+    <li><a href="#li">Lorem ipsum dolor sit.</a></li>
+    <li><a href="#li">Lorem ipsum dolor sit.</a></li>
+  </ul>
+</main>
+
+<style>
+  /* @import "https://cdn.jsdelivr.net/gh/Tofu-Xx/tofukit/tools/reset.css"; */
+  @import "../../../tools/reset.css";
+  /* @import "../src/reset.css"; */
+
+  span {
+    &::after {
+      content: " ";
+      width: 10px;
+      height: 10px;
+      background: red;
+    }
+  }
+
+  * {
+    width: fit-content;
+    height: fit-content;
+  }
+</style>

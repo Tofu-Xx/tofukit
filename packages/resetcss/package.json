@@ -1,0 +1,19 @@
+{
+  "name": "@tofukit/resetcss",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "tofu-xx",
+  "license": "MIT",
+  "devDependencies": {
+    "postcss": "^8.4.41",
+    "tsup": "^8.2.4"
+  }
+}

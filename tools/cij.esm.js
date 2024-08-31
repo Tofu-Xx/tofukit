@@ -1,0 +1,1 @@
+var e=function(e){var n=e.raw;for(var r=arguments.length,t=new Array(r>1?r-1:0),a=1;a<r;a++){t[a-1]=arguments[a]}var o=n.reduce(function(e,n,r){var a;return e+n+((a=t[r])!==null&&a!==void 0?a:t[r]="")},""),c=document.createElement("style");c.textContent=o,document.body.appendChild(c)};export{e as cij};

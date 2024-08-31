@@ -1,0 +1,18 @@
+{
+  "name": "@tofukit/cij",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup"
+  },
+  "keywords": [
+    "css in js"
+  ],
+  "author": "tofu-xx",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^8.2.4"
+  }
+}
