@@ -1,6 +1,6 @@
 {
   "name": "tofukit",
-  "version": "0.0.4",
+  "version": "0.0.5-beta.1",
   "description": "A simple toolbox of various web gadgets to boost your development happiness index",
   "scripts": {
     "release": "bumpp package.json --commit --tag --push --publish"
