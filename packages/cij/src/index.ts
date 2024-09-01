@@ -11,14 +11,14 @@ export const cij = ({ raw }, ...args: any[]) => {
   document.querySelector("head")?.appendChild(style);
 };
 
-export const hij = ({ raw }, ...args: any[]) => ({
-  mount: (select: string) => {
-    document.querySelector(select)!.innerHTML = _handle(raw, args);
-  },
+// export const hij = ({ raw }, ...args: any[]) => ({
+//   mount: (select: string) => {
+//     document.querySelector(select)!.innerHTML = _handle(raw, args);
+//   },
   // const parser = new DOMParser();
   // const doc = parser.parseFromString(`<hij>${htmlString}</hij>`, "text/html")
   //   .querySelector(
   //     "hij",
   //   )!.children;
   // return doc.length > 1 ? Array.from(doc) : doc[0];
-});
+// });

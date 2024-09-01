@@ -3,7 +3,8 @@
   "version": "0.0.6",
   "description": "A simple toolbox of various web gadgets to boost your development happiness index",
   "scripts": {
-    "release": "bumpp package.json --commit --tag  --publish"
+    "bumpp": "bumpp package.json --commit --tag --no-push --publish",
+    "release": "release-it"
   },
   "files": [
     "tools"
@@ -27,9 +28,8 @@
   "author": "tofu-xx <tofu-xx@foxmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "bumpp": "^9.5.2"
-  },
-  "dependencies": {
-    "@types/node": "^22.5.1"
+    "@types/node": "^22.5.1",
+    "bumpp": "^9.5.2",
+    "release-it": "^17.6.0"
   }
 }
