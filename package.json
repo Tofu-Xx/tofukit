@@ -1,6 +1,6 @@
 {
   "name": "tofukit",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A simple toolbox of various web gadgets to boost your development happiness index",
   "scripts": {
     "release": "bumpp package.json --commit --tag --no-push --publish"
@@ -27,6 +27,7 @@
   "author": "tofu-xx <tofu-xx@foxmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^22.5.1"
+    "@types/node": "^22.5.1",
+    "bumpp": "^9.5.2"
   }
 }
