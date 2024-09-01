@@ -1,9 +1,9 @@
 {
   "name": "tofukit",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A simple toolbox of various web gadgets to boost your development happiness index",
   "scripts": {
-    "release": "bumpp package.json --commit --tag --publish --push"
+    "release": "bumpp package.json --commit --tag --publish --no-push & g.p & pnpm publish --access public"
   },
   "files": [
     "tools"
