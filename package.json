@@ -29,7 +29,6 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^22.5.1",
-    "bumpp": "^9.5.2",
     "release-it": "^17.6.0"
   }
 }
