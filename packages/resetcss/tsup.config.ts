@@ -4,12 +4,8 @@ export default defineConfig({
   entry: {
     reset: "./src/index.css",
   },
-  outDir: "../../tools",
+  outDir: "../../dist",
   format: ["iife"],
-  // outExtension: ({ format }) => ({
-  //   js: `.${format}.js`,
-  // }),
-  // globalName: "tofukit",
-  target:"es5",
+  target: "es5",
   minify: true,
 });
