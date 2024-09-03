@@ -4,7 +4,6 @@
   "description": "A simple toolbox of various web gadgets to boost your development happiness index",
   "scripts": {
     "release": "bumpp package.json --all &&  pnpm publish --access public --registry https://registry.npmjs.org",
-    "prepublishOnly": "mkdir temp && cp -R dist/* temp/ && npm publish temp/ && rm -rf temp"
   },
   "files": [
     "dist"
