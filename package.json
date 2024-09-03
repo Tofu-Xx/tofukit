@@ -1,10 +1,10 @@
 {
   "name": "tofukit",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "A simple toolbox of various web gadgets to boost your development happiness index",
   "scripts": {
     "release": "bumpp package.json --all &&  pnpm publish --access public --registry https://registry.npmjs.org",
-    "prepublishOnly": "mv dist/* . && rm -rf dist"
+    "prepublishOnly": "mkdir temp && cp -R dist/* temp/ && npm publish temp/ && rm -rf temp"
   },
   "files": [
     "dist"
