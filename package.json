@@ -1,9 +1,10 @@
 {
   "name": "tofukit",
   "version": "0.0.15",
+  "access": "public",
   "description": "A simple toolbox of various web gadgets to boost your development happiness index",
   "scripts": {
-    "release": "bumpp package.json --all &&  pnpm publish --access public --registry https://registry.npmjs.org"
+    "release": "bumpp package.json --all &&  pnpm publish"
   },
   "files": [
     "dist"
