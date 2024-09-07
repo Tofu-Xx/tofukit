@@ -66,12 +66,13 @@ b {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #8888;
+  background-color: #778;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #9998;
+  background-color: #666;
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar-button {
