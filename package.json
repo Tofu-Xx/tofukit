@@ -1,6 +1,6 @@
 {
   "name": "tofukit",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "access": "public",
   "description": "A simple toolbox of various web gadgets to boost your development happiness index",
   "scripts": {
