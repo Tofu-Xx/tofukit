@@ -1,10 +1,10 @@
 {
   "name": "@tofukit/resetcss",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "dist/reset.css",
   "scripts": {
-    "release": "bumpp package.json --all && nr build &&  pnpm publish",
+    "release": "bumpp --no-push && nr build &&  pnpm publish",
     "build": "tsup"
   },
   "keywords": [
