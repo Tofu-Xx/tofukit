@@ -1,15 +1,16 @@
 {
-  "name": "@tofukit/resetcss","version": "0.0.1",
+  "name": "@tofukit/resetcss",
+  "version": "0.0.2",
   "description": "",
   "main": "dist/reset.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "bumpp package.json --all &&  pnpm publish", 
+    "release": "bumpp package.json --all && nr build &&  pnpm publish",
     "build": "tsup"
   },
   "keywords": [
     "css"
-  ],  "publishConfig": {
+  ],
+  "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
