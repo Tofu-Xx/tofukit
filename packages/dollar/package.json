@@ -2,13 +2,17 @@
   "name": "@tofukit/dollar",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/dollar.global.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsup --entry.dollar src/index.ts --format iife,esm  --outDir ../../dist"
+    "release": "bumpp package.json --all &&  pnpm publish",
+    "build": "tsup --entry.dollar src/index.ts --format iife,esm  --outDir ./dist"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [],  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "author": "tofu-xx <tofu-xx@foxmail.com>",
   "license": "MIT",
   "dependencies": {
     "tsup": "^8.2.4"

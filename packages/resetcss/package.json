@@ -1,16 +1,19 @@
 {
-  "name": "@tofukit/resetcss",
-  "version": "0.0.1",
+  "name": "@tofukit/resetcss","version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/reset.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "bumpp package.json --all &&  pnpm publish", 
     "build": "tsup"
   },
   "keywords": [
     "css"
-  ],
-  "author": "tofu-xx",
+  ],  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "author": "tofu-xx <tofu-xx@foxmail.com>",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^10.4.20",

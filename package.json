@@ -3,7 +3,6 @@
   "version": "0.0.17",
   "description": "A simple toolbox of various web gadgets to boost your development happiness index",
   "scripts": {
-    "release": "bumpp package.json --all &&  pnpm publish",
     "up": "taze major -I",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"

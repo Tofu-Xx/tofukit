@@ -4,7 +4,6 @@ export default defineConfig({
   entry: {
     cij: "./src/index.ts",
   },
-  outDir: "../../dist",
   format: ["iife", "esm"],
   outExtension: ({ format }) => ({
     js: `.${format}.js`,
