@@ -3,12 +3,13 @@
   "version": "0.0.17",
   "description": "A simple toolbox of various web gadgets to boost your development happiness index",
   "scripts": {
-    "release": "bumpp package.json --all &&  pnpm publish"
+    "release": "bumpp package.json --all &&  pnpm publish",
+    "up": "taze major -I"
   },
   "files": [
     "dist"
   ],
-  "packageManager": "pnpm@9.4.0",
+  "packageManager": "pnpm@9.12.2",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
@@ -31,7 +32,8 @@
   "author": "tofu-xx <tofu-xx@foxmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^22.5.1",
-    "bumpp": "^9.5.2"
+    "@types/node": "^22.7.7",
+    "bumpp": "^9.7.1",
+    "taze": "^0.17.2"
   }
 }
