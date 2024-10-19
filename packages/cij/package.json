@@ -4,13 +4,13 @@
   "description": "",
   "main": "dist/cij.iife.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "bumpp package.json --all &&  pnpm publish",
+    "release": "bumpp --no-push && nr build &&  pnpm publish",
     "build": "tsup"
   },
   "keywords": [
     "css in js"
-  ],  "publishConfig": {
+  ],
+  "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },

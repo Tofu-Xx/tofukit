@@ -4,11 +4,11 @@
   "description": "",
   "main": "dist/dollar.global.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "bumpp package.json --all &&  pnpm publish",
+    "release": "bumpp --no-push && nr build &&  pnpm publish",
     "build": "tsup --entry.dollar src/index.ts --format iife,esm  --outDir ./dist"
   },
-  "keywords": [],  "publishConfig": {
+  "keywords": [],
+  "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
