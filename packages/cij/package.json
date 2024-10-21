@@ -2,20 +2,20 @@
   "name": "@tofukit/cij",
   "version": "0.0.0",
   "description": "",
-  "main": "dist/cij.iife.js",
-  "scripts": {
-    "release": "bumpp --no-push && nr build &&  pnpm publish",
-    "build": "tsup"
-  },
+  "author": "tofu-xx <tofu-xx@foxmail.com>",
+  "license": "MIT",
   "keywords": [
     "css in js"
   ],
+  "main": "dist/cij.iife.js",
+  "scripts": {
+    "release": "bumpp --no-push && nr build && pnpm publish",
+    "build": "tsup"
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
-  "author": "tofu-xx <tofu-xx@foxmail.com>",
-  "license": "MIT",
   "devDependencies": {
     "tsup": "^8.2.4"
   }

@@ -11,8 +11,6 @@
   display: block;
 }
 
-
-
 body {
   min-height: 100vh;
 }
@@ -21,7 +19,6 @@ a {
   text-decoration: inherit;
   color: inherit;
 }
-
 
 ol,
 ul,
