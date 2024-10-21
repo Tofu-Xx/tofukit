@@ -1,10 +1,10 @@
-import { defineConfig } from "tsup";
+import { defineConfig } from 'tsup'
 
 export default defineConfig({
   entry: {
-    reset: "./src/index.css",
+    reset: './src/index.css',
   },
-  format: ["iife"],
-  target: "es5",
+  format: ['iife'],
+  target: 'es5',
   minify: true,
-});
+})

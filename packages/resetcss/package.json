@@ -1,5 +1,6 @@
 {
   "name": "@tofukit/resetcss",
+  "type": "commonjs",
   "version": "0.1.1",
   "description": "",
   "author": "tofu-xx <tofu-xx@foxmail.com>",
@@ -7,7 +8,15 @@
   "keywords": [
     "css"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/reset.css"
+    }
+  },
   "main": "dist/reset.css",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "release": "bumpp --no-push && nr build && pnpm publish",
     "build": "tsup"
