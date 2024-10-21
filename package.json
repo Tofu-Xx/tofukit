@@ -1,7 +1,7 @@
 {
-  "name": "tofukit",
   "type": "module",
   "version": "0.0.17",
+  "private": true,
   "packageManager": "pnpm@9.12.2",
   "description": "A simple toolbox of various web gadgets to boost your development happiness index",
   "author": "tofu-xx <tofu-xx@foxmail.com>",
@@ -14,16 +14,6 @@
   "bugs": {
     "url": "https://github.com/tofu-xx/tofukit/issues"
   },
-  "keywords": [
-    "tools",
-    "toolkit",
-    "front-end",
-    "work",
-    "dx"
-  ],
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "up": "taze major -I",
     "lint": "eslint .",
