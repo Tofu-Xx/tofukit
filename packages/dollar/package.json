@@ -1,14 +1,14 @@
 {
   "name": "@tofukit/dollar",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.0",
+  "description": "$() and $$()",
   "author": "tofu-xx <tofu-xx@foxmail.com>",
   "license": "MIT",
   "keywords": [],
   "main": "dist/dollar.global.js",
   "scripts": {
     "release": "bumpp --no-push && nr build && pnpm publish",
-    "build": "tsup --entry.dollar src/index.ts --format iife,esm  --outDir ./dist"
+    "build": "tsup --entry.dollar src/index.ts --format iife,esm --outDir ./dist"
   },
   "publishConfig": {
     "access": "public",
