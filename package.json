@@ -1,21 +1,11 @@
 {
   "name": "tofukit",
-  "version": "0.0.17",
   "type": "module",
-  "description": "A simple toolbox of various web gadgets to boost your development happiness index",
-  "scripts": {
-    "up": "taze major -I",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
-  }, 
-  "files": [
-    "dist"
-  ],
+  "version": "0.0.17",
   "packageManager": "pnpm@9.12.2",
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org"
-  },
+  "description": "A simple toolbox of various web gadgets to boost your development happiness index",
+  "author": "tofu-xx <tofu-xx@foxmail.com>",
+  "license": "MIT",
   "homepage": "https://github.com/tofu-xx/tofukit#readme",
   "repository": {
     "type": "git",
@@ -31,8 +21,18 @@
     "work",
     "dx"
   ],
-  "author": "tofu-xx <tofu-xx@foxmail.com>",
-  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "up": "taze major -I",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^3.8.0",
     "@types/node": "^22.7.7",
