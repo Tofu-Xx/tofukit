@@ -1,12 +1,13 @@
 {
   "name": "tofukit",
   "version": "0.0.17",
+  "type": "module",
   "description": "A simple toolbox of various web gadgets to boost your development happiness index",
   "scripts": {
     "up": "taze major -I",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
-  },
+  }, 
   "files": [
     "dist"
   ],
