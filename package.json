@@ -1,15 +1,13 @@
 {
   "type": "module",
-  "version": "0.0.17",
-  "private": true,
   "packageManager": "pnpm@9.12.2",
   "description": "A simple toolbox of various web gadgets to boost your development happiness index",
   "author": "tofu-xx <tofu-xx@foxmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/tofu-xx/tofukit#readme",
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tofu-xx/tofukit.git"
+    "url": "git+https://github.com/tofu-xx/tofukit.git",
+    "type": "git"
   },
   "bugs": {
     "url": "https://github.com/tofu-xx/tofukit/issues"
@@ -18,10 +16,6 @@
     "up": "taze major -I",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.8.0",
