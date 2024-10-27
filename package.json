@@ -1,4 +1,5 @@
 {
+  "name": "@tofukit/monorepo",
   "type": "module",
   "packageManager": "pnpm@9.12.2",
   "description": "A simple toolbox of various web gadgets to boost your development happiness index",
