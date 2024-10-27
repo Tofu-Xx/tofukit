@@ -1,3 +1,18 @@
+<style>
+  @import "../dist/reset.css";
+
+  span {
+    &::after {
+      display: block;
+      content: "";
+      width: 10px;
+      height: 10px;
+      background: red;
+    }
+  }
+
+</style>
+
 <main>
   <span>span</span>
 
@@ -57,27 +72,3 @@
     <li><a href="#li">Lorem ipsum dolor sit.</a></li>
   </ul>
 </main>
-
-<style>
-  /* @import "https://cdn.jsdelivr.net/gh/Tofu-Xx/tofukit/tools/reset.css"; */
-  /* @import "../../../dist/reset.css"; */
-  @import "../src/index.css";
-
-  span {
-    &::after {
-      content: " ";
-      width: 10px;
-      height: 10px;
-      background: red;
-    }
-  }
-
-  * {
-    width: fit-content;
-    height: fit-content;
-  }
-
-  main{
-    height: 110vh;
-  }
-</style>
