@@ -1,5 +1,6 @@
 {
   "name": "@tofukit/cij",
+  "type": "module",
   "version": "0.0.0",
   "description": "css in js",
   "author": "tofu-xx <tofu-xx@foxmail.com>",
@@ -7,6 +8,11 @@
   "keywords": [
     "css in js"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/cij.iife.js"
+    }
+  },
   "main": "dist/cij.iife.js",
   "scripts": {
     "release": "bumpp --no-push && nr build && pnpm publish",

@@ -1,6 +1,6 @@
 {
   "name": "@tofukit/resetcss",
-  "type": "commonjs",
+  "type": "module",
   "version": "0.2.1",
   "description": "You don't want to reset your css every time",
   "author": "tofu-xx <tofu-xx@foxmail.com>",
