@@ -19,8 +19,7 @@
     "build": "tsup"
   },
   "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org"
+    "access": "public"
   },
   "devDependencies": {
     "tsup": "^8.2.4"
