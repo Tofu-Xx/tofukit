@@ -1,7 +1,7 @@
 {
   "name": "@tofukit/monorepo",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.2.1",
   "packageManager": "pnpm@9.12.2",
   "description": "A simple toolbox of various web gadgets to boost your development happiness index",
   "author": "tofu-xx <tofu-xx@foxmail.com>",
@@ -15,7 +15,7 @@
     "url": "https://github.com/tofu-xx/tofukit/issues"
   },
   "scripts": {
-    "release": "bumpp --no-push",
+    "release": "bumpp --no-push ; g.p",
     "up": "taze major -I",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
