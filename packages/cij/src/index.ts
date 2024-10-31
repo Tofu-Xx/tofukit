@@ -7,3 +7,13 @@ export const cij = (strings: TemplateStringsArray, ...args: any[]) => {
   styleSheet.replaceSync(cssString);
   document.adoptedStyleSheets.push(styleSheet)
 };
+
+  /* 
+   cij['button']({
+    backgroundColor: 'red',
+    color: 'white',
+    '&:hover': {
+      backgroundColor: 'blue',
+    }
+  })
+  */
