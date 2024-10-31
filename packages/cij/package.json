@@ -1,7 +1,7 @@
 {
   "name": "@tofukit/cij",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "css in js",
   "author": "tofu-xx <tofu-xx@foxmail.com>",
   "license": "MIT",
