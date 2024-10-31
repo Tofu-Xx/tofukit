@@ -64,9 +64,7 @@
   box-sizing: border-box;
   margin: 0;
   background-repeat: no-repeat;
-  border-width: 0;
-  border-style: solid;
-  border-color: #e5e7eb;
+  transition: all 0.5s;
 }
 :where(*:before, *:after) {
   display: block;
@@ -97,8 +95,6 @@
 }
 :where(body) {
   min-height: 100vh;
-  color: #2c3e50;
-  transition: all 0.5s;
   font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -110,6 +106,7 @@
   font-size: 1em;
   font-family: ui-monospace, "Menlo", "Consolas", "Roboto Mono", "Ubuntu Monospace", "Noto Mono", "Oxygen Mono", "Liberation Mono", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
 :where(a) {
   color: inherit;
   text-decoration: inherit;
@@ -118,28 +115,22 @@
   list-style: none;
 }
 :where(h1) {
-  font-size: 2rem;
-  font-weight: inherit;
+  font-size: 2em;
 }
 :where(h2) {
-  font-size: 1.5rem;
-  font-weight: inherit;
+  font-size: 1.5em;
 }
 :where(h3) {
-  font-size: 1.17rem;
-  font-weight: inherit;
+  font-size: 1.17em;
 }
 :where(h4) {
-  font-size: 1.00rem;
-  font-weight: inherit;
+  font-size: 1.00em;
 }
 :where(h5) {
-  font-size: 0.83rem;
-  font-weight: inherit;
+  font-size: 0.83em;
 }
 :where(h6) {
-  font-size: 0.67rem;
-  font-weight: inherit;
+  font-size: 0.67em;
 }
 :where(hr) {
   border-style: solid;
@@ -185,13 +176,22 @@
 :where(:disabled) {
   cursor: default;
 }
+:where(button, input, optgroup, select, textarea) {
+  font-family: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  padding-left: 0.67em;
+  padding-right: 0.67em;
+}
 :where(menu, article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section) {
   display: block;
 }
 :where(html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video) {
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 :where([hidden]:where(:not([hidden="until-found"]))) {
