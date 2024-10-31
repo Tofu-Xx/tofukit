@@ -15,6 +15,7 @@
     "url": "https://github.com/tofu-xx/tofukit/issues"
   },
   "scripts": {
+    "release": "bumpp --no-push",
     "up": "taze major -I",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
