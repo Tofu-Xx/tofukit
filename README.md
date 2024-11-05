@@ -8,6 +8,6 @@
 
 A simple toolbox of various web gadgets to boost your development happiness index
 
-## tool
+## Tools
 - [resetcss](./packages/resetcss/README.md)
 - [cij](./packages/cij/README.md)
