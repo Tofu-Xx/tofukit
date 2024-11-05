@@ -10,10 +10,11 @@
   ],
   "exports": {
     ".": {
-      "import": "./dist/cij.iife.js"
+      "import": "./dist/cij.esm.js"
     }
   },
   "main": "dist/cij.iife.js",
+  "module": "dist/cij.esm.js",
   "scripts": {
     "release": "bumpp --no-push --no-tag && nr build && pnpm publish",
     "build": "tsup"

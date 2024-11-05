@@ -8,7 +8,7 @@ export default defineConfig({
   outExtension: ({ format }) => ({
     js: `.${format}.js`,
   }),
-  globalName: 'tofukit',
+  globalName: 'cij',
   target: 'es5',
   minify: true,
 })
