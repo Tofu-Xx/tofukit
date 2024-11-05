@@ -19,7 +19,7 @@ or
 <script src="https://unpkg.com/@tofukit/cij/dist/cij.iife.js"></script>
 <button class="button">button</button>
 <script>
-  cij`
+  cij.default`
     .button {
       color: red;
     }
