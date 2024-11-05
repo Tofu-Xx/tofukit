@@ -11,9 +11,7 @@
     "url": "git+https://github.com/tofu-xx/tofukit.git",
     "type": "git"
   },
-  "bugs": {
-    "url": "https://github.com/tofu-xx/tofukit/issues"
-  },
+  "bugs": { "url": "https://github.com/tofu-xx/tofukit/issues" },
   "scripts": {
     "release": "bumpp --no-push && zsh -ic g.p",
     "up": "taze major -I",
