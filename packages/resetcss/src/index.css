@@ -23,7 +23,7 @@
   box-sizing: border-box;
   margin: 0;
   background-repeat: no-repeat;
-  transition: all 0.5s;
+  transition: color,background,border,top,left,right,bottom 0.5s;
 }
 :where(*:before, *:after) {
   display: block;
@@ -137,6 +137,7 @@
   cursor: default;
 }
 :where(button, input, optgroup, select, textarea) {
+  display: block;
   font-family: inherit;
   font-feature-settings: inherit;
   font-variation-settings: inherit;
