@@ -3,9 +3,12 @@ const _handle = (raw: TemplateStringsArray, vars: any[]) =>
 
 export default (strings: TemplateStringsArray, ...args: any[]) => {
   const cssString = _handle(strings, args);
-  const styleSheet = new CSSStyleSheet();
-  styleSheet.replaceSync(cssString);
-  document.adoptedStyleSheets.push(styleSheet)
+  // const styleSheet = new CSSStyleSheet();
+  // styleSheet.replaceSync(cssString);
+  // document.adoptedStyleSheets.push(styleSheet)
+  const styleEl = document.createElement('style');
+  styleEl.textContent = cssString;
+  document.head.appendChild(styleEl);
 };
 
   /* 

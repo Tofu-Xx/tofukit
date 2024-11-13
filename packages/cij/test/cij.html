@@ -9,9 +9,10 @@
 </body>
 
 <script>
-  const { cij } = tofukit;
+  const { default: css } = cij;
 
-  cij`
+  css`
+    @import "https://unpkg.com/@tofukit/resetcss";
     button {
       background-color: red;
       color: white;
