@@ -1,7 +1,7 @@
 {
   "name": "@tofukit/resetcss",
   "type": "module",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "You don't want to reset your css every time",
   "author": "tofu-xx <tofu-xx@foxmail.com>",
   "license": "MIT",
