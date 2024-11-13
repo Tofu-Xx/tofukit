@@ -15,14 +15,20 @@ You don't want to reset your css every time
 ```
 
 ### similar projects
+- [@unocss/reset](https://github.com/unocss/unocss/tree/main/packages/reset) - Collection of standard reset CSS stylesheets.
+
 - [normalize.css](https://github.com/csstools/normalize.css) - A CSS library that provides consistent, cross-browser default styling of HTML elements.
+
 - [modern-normalize.css](https://github.com/sindresorhus/modern-normalize) - An
 alternative to normalize.css, adhering to a minimal set of normalizations and
 common developer expectations and preferences.
+
 - [opinionate.css](https://github.com/adamgruber/opinionate.css) - A supplement
 to normalize.css with opinionated rules.
+
 - [remedy.css](https://github.com/mozdevs/cssremedy) - An alternative to
 normalize.css, adhering to different common developer expectations and
 preferences.
+
 - [sanitize.css](https://github.com/csstools/sanitize.css) - An alternative to
 normalize.css, adhering to common developer expectations and preferences.
