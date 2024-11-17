@@ -1,3 +1,18 @@
+# Created by https://www.toptal.com/developers/gitignore/api/mean,composer,yeoman,nette
+# Edit at https://www.toptal.com/developers/gitignore?templates=mean,composer,yeoman,nette
+
+### Composer ###
+composer.phar
+/vendor/
+
+# Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
+# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
+# composer.lock
+
+### MEAN ###
+# MEAN Stack Base
+
+### MEAN.Node Stack ###
 # Logs
 logs
 *.log
@@ -102,7 +117,6 @@ dist
 
 # vuepress v2.x temp and cache directory
 .temp
-.cache
 
 # Docusaurus cache and generated files
 .docusaurus
@@ -128,3 +142,48 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+### MEAN.Anglar Stack ###
+## Angular ##
+# compiled output
+dist/
+tmp/
+app/**/*.js
+app/**/*.js.map
+
+# dependencies
+bower_components/
+
+# IDEs and editors
+.idea/
+
+# misc
+.sass-cache/
+connect.lock/
+coverage/
+libpeerconnection.log/
+npm-debug.log
+testem.log
+typings/
+.angular/
+
+# e2e
+e2e/*.js
+e2e/*.map
+
+# System Files
+.DS_Store/
+
+### Nette ###
+# Nette - http://nette.org
+# Ignore /log and /temp directories content but commit .htaccess settings
+/log/*
+!/log/.htaccess
+/temp/*
+!/temp/.htaccess
+
+### Yeoman ###
+
+build/
+
+# End of https://www.toptal.com/developers/gitignore/api/mean,composer,yeoman,nette
