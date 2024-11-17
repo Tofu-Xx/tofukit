@@ -54,9 +54,8 @@
 }
 :where(hr) {
   border-style: solid;
-  border-width: 1px 0 0;
+  border-width: 1px;
   color: inherit;
-  height: 0;
   overflow: visible;
   border-top-width: 1px;
 }
