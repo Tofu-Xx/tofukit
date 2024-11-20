@@ -1,30 +1,8 @@
 @import "./scrollbar.css";
 @import "./universal.css";
-:where(:root, :host) {
-  cursor: default;
-  line-height: 1.6;
-  overflow-wrap: break-word;
-  -moz-tab-size: 4;
-  tab-size: 4;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-text-size-adjust: 100%;
-  font-feature-settings: normal;
-  font-variation-settings: normal;
-  font-family: -apple-system, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-:where(body) {
-  min-height: 100lvh;
-  font-size: 15px;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-:where(code, kbd, samp, pre) {
-  font-feature-settings: normal;
-  font-variation-settings: normal;
-  font-size: 1em;
-  font-family: "Menlo", "Consolas", "Roboto Mono", "Ubuntu Monospace", "Noto Mono", "Oxygen Mono", "Liberation Mono", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
+@import "./root.css";
+@import "./enum.css";
+
 
 :where(a) {
   color: inherit;
@@ -80,9 +58,6 @@
   border-collapse: collapse;
   border-spacing: 0;
 }
-:where(img, svg, video, canvas, audio, iframe, embed, object) {
-  display: block;
-}
 :where(img, video) {
   max-width: 100%;
   height: auto;
@@ -95,26 +70,6 @@
 }
 :where(:disabled) {
   cursor: default;
-}
-:where(button, input, optgroup, select, textarea) {
-  display: block;
-  font-family: inherit;
-  font-feature-settings: inherit;
-  font-variation-settings: inherit;
-  font-size: 100%;
-  font-weight: inherit;
-  line-height: inherit;
-  color: inherit;
-  padding-left: 0.67em;
-  padding-right: 0.67em;
-}
-:where(menu, article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section) {
-  display: block;
-}
-:where(html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video) {
-  border: 0;
-  vertical-align: baseline;
-  overflow: auto;
 }
 :where([hidden]:where(:not([hidden="until-found"]))) {
   display: none;
