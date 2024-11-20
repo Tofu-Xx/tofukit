@@ -1,0 +1,33 @@
+<head>
+  <title>self-reference</title>
+  <link rel="icon" href="https://shiki.tmrs.site/logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import "https://unpkg.com/@tofukit/resetcss";
+    .shiki {
+      min-height: 100vh;
+      line-height: 1.2;
+      padding: 1em;
+    }
+    .source-btn {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      color: #fdb;
+      padding: .5rem;
+      background: #456;
+      border-radius: .5em;
+      mix-blend-mode: exclusion;
+    }
+  </style>
+</head>
+
+<body>
+  <script type="module">
+    import { codeToHtml } from 'https://esm.sh/shiki';
+    const sourceUrl = 'https://github.com/tofu-xx/self-reference/blob/main/index.html';
+    const themes = 'andromeeda,aurora-x,ayu-dark,catppuccin-frappe,catppuccin-latte,catppuccin-macchiato,catppuccin-mocha,dark-plus,dracula,dracula-soft,everforest-dark,everforest-light,github-dark,github-dark-default,github-dark-dimmed,github-dark-high-contrast,github-light,github-light-default,github-light-high-contrast,houston,kanagawa-dragon,kanagawa-lotus,kanagawa-wave,laserwave,light-plus,material-theme,material-theme-darker,material-theme-lighter,material-theme-ocean,material-theme-palenight,min-dark,min-light,monokai,night-owl,nord,one-dark-pro,one-light,plastic,poimandres,red,rose-pine,rose-pine-dawn,rose-pine-moon,slack-dark,slack-ochin,snazzy-light,solarized-dark,solarized-light,synthwave-84,tokyo-night,vesper,vitesse-black,vitesse-dark,vitesse-light'.split(',');
+    const theme = themes[Math.floor(Math.random() * themes.length)];
+    document.body.innerHTML = `<a href="${sourceUrl}" class="source-btn" target="_blank">source code</a>` + await codeToHtml(document.documentElement.innerHTML, { lang: 'html', theme })
+  </script>
+</body>
