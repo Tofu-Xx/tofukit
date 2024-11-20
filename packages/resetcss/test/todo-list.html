@@ -1,0 +1,69 @@
+<head>
+  <title>Vue Todo List</title>
+  <script src="https://unpkg.com/vue@2"></script>
+  <link rel="stylesheet" href="../src/index.css">
+</head>
+
+<body>
+  <div id="app" class="todo-container">
+    <h2>Todo List</h2>
+    <input type="text" v-model="newTodo" placeholder="Add a new task...">
+    <button @click="addTodo">Add</button>
+    <ul>
+      <li v-for="(todo, index) in todos" :key="index">
+        {{ todo }}
+        <button @click="editTodo(index)">Edit</button>
+        <button @click="removeTodo(index)">Delete</button>
+      </li>
+    </ul>
+
+    <!-- Edit Task Dialog -->
+    <dialog ref="editDialog">
+      <p>Edit Task:</p>
+      <input type="text" v-model="editedTodo" />
+      <div>
+        <button @click="confirmEdit">Confirm</button>
+        <button @click="cancelEdit">Cancel</button>
+      </div>
+    </dialog>
+  </div>
+</body>
+
+<script>
+  new Vue({
+    el: '#app',
+    data: {
+      newTodo: '',
+      todos: [],
+      editIndex: -1,
+      editedTodo: ''
+    },
+    methods: {
+      addTodo() {
+        if (this.newTodo.trim()) {
+          this.todos.push(this.newTodo.trim());
+          this.newTodo = '';
+        }
+      },
+      removeTodo(index) {
+        this.todos.splice(index, 1);
+      },
+      editTodo(index) {
+        this.editIndex = index;
+        this.editedTodo = this.todos[index];
+        this.$refs.editDialog.showModal();
+      },
+      confirmEdit() {
+        if (this.editedTodo.trim()) {
+          this.$set(this.todos, this.editIndex, this.editedTodo.trim());
+        }
+        this.cancelEdit();
+      },
+      cancelEdit() {
+        this.editIndex = -1;
+        this.editedTodo = '';
+        this.$refs.editDialog.close();
+      }
+    }
+  });
+</script>
