@@ -1,52 +1,16 @@
 <head>
   <title>resetcss test | demon</title>
-  <link rel="stylesheet" href="../src/index.css">  
-  <script src="https://unpkg.com/vueey@latest"></script>
+  <link rel="stylesheet" href="../src/index.css">
+  <script src="https://unpkg.com/vue@2"></script>
+  <!-- <script src="https://unpkg.com/vueey@latest"></script> -->
 </head>
 
 <body>
-  <div id="app">
-    <p>{{ count }} * {{ count }} = {{ count * count }}</p>
-    <button @click="inc">inc</button>
-    <button @click="inc()">inc()</button>
-    <button @click="count++">add</button>
-    <button @click="fns.add">{{ fns.add.name }} ❌</button>
-    <!--  -->
-    <br><br>
-    <span>{{ msg }}</span> <code :ref="showKeyRefStr"></code>
-    <br>
-    <input :value="msg" @input="ipt">
-    <input :value="getMsg()" @change="log($event)">
-    <input :value="'vue'+`ey`" @keyup="$refs.showKey.textContent = $event.key">
-  </div>
+  <span>Vueey</span> <code ref="showKey"></code>
+  <br>
+  <input @keyup="$refs.showKey.textContent = $event.key">
 </body>
 
 <script>
-  new Vue({
-    el: '#app',
-    data: {
-      msg: 'Vueey',
-      count: 0,
-      fns: {
-        add() {
-          this.count++;
-        }
-      },
-      showKeyRefStr: 'showKey'
-    },
-    methods: {
-      inc() {
-        this.count++;
-      },
-      ipt(evt) {
-        this.msg = evt.target.value;
-      },
-      log(evt) {
-        console.log(evt.target.value);
-      },
-      getMsg() {
-        return this.msg;
-      }
-    }
-  })
+  new Vue()
 </script>
