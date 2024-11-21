@@ -12,7 +12,7 @@
   font-feature-settings: normal;
   font-variation-settings: normal;
   font-size: 1em;
-  font-family: "Menlo", "Consolas", "Roboto Mono", "Ubuntu Monospace", "Noto Mono", "Oxygen Mono", "Liberation Mono", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 :where(menu, article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section),
 :where(img, svg, video, canvas, audio, iframe, embed, object) {
