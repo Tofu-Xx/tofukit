@@ -22,5 +22,6 @@
   margin: 0;
   border: 0;
   vertical-align: baseline;
-  overflow: auto;
+  /* overflow: auto; */
+  overflow: inherit;
 }

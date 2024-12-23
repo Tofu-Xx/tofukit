@@ -2,12 +2,13 @@
   cursor: default;
   line-height: 1.6;
   overflow-wrap: break-word;
-  -moz-tab-size: 4;
+  overflow: auto;
   tab-size: 4;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-text-size-adjust: 100%;
   font-feature-settings: normal;
   font-variation-settings: normal;
+  -moz-tab-size: 4;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
 }
 :where(body) {
   min-height: 100lvh;
