@@ -2,7 +2,7 @@
   cursor: default;
   line-height: 1.6;
   overflow-wrap: break-word;
-  overflow: auto;
+  /* overflow: auto; */
   tab-size: 4;
   font-feature-settings: normal;
   font-variation-settings: normal;
